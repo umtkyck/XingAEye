@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "XingAEye",
+    "slug": "xingaeye",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.xingaeye.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "XingAEye needs your location to show nearby railroad crossings",
+        "NSCameraUsageDescription": "XingAEye needs camera access to report incidents"
+      }
+    },
+    "android": {
+      "package": "com.xingaeye.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "CAMERA",
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-notifications"
+    ],
+    "notification": {
+      "icon": "./assets/notification-icon.png",
+      "color": "#000000",
+      "androidMode": "default",
+      "androidCollapsedTitle": "XingAEye Alert"
+    }
+  }
+}
