@@ -1,0 +1,31 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Transparent background for adaptive icon -->
+  <rect width="1024" height="1024" fill="transparent"/>
+
+  <!-- Foreground content (centered, with safe zone) -->
+  <g transform="translate(212, 212)">
+    <!-- Train -->
+    <rect x="100" y="80" width="400" height="480" rx="32" fill="#2563eb"/>
+
+    <!-- Windows -->
+    <rect x="140" y="120" width="140" height="140" rx="20" fill="#ffffff"/>
+    <rect x="320" y="120" width="140" height="140" rx="20" fill="#ffffff"/>
+    <rect x="160" y="140" width="100" height="100" rx="12" fill="#60a5fa"/>
+    <rect x="340" y="140" width="100" height="100" rx="12" fill="#60a5fa"/>
+
+    <!-- Train base -->
+    <rect x="100" y="420" width="400" height="100" rx="20" fill="#1e40af"/>
+
+    <!-- Wheels -->
+    <circle cx="180" cy="490" r="40" fill="#1f2937"/>
+    <circle cx="180" cy="490" r="20" fill="#ffffff"/>
+    <circle cx="300" cy="490" r="40" fill="#1f2937"/>
+    <circle cx="300" cy="490" r="20" fill="#ffffff"/>
+    <circle cx="420" cy="490" r="40" fill="#1f2937"/>
+    <circle cx="420" cy="490" r="20" fill="#ffffff"/>
+
+    <!-- Alert badge -->
+    <circle cx="480" cy="80" r="80" fill="#ef4444"/>
+    <text x="480" y="110" font-family="Arial, sans-serif" font-size="80" font-weight="bold" fill="#ffffff" text-anchor="middle">!</text>
+  </g>
+</svg>

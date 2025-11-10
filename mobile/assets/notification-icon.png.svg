@@ -1,0 +1,23 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Simple notification icon (monochrome for Android) -->
+  <circle cx="48" cy="48" r="48" fill="#ffffff"/>
+
+  <!-- Train silhouette -->
+  <rect x="33" y="27" width="30" height="36" rx="3" fill="#000000"/>
+
+  <!-- Windows -->
+  <rect x="36" y="30" width="10" height="10" rx="1" fill="#ffffff"/>
+  <rect x="50" y="30" width="10" height="10" rx="1" fill="#ffffff"/>
+
+  <!-- Train base -->
+  <rect x="33" y="54" width="30" height="6" rx="2" fill="#000000"/>
+
+  <!-- Wheels -->
+  <circle cx="39" cy="60" r="3" fill="#000000"/>
+  <circle cx="48" cy="60" r="3" fill="#000000"/>
+  <circle cx="57" cy="60" r="3" fill="#000000"/>
+
+  <!-- Alert indicator -->
+  <circle cx="72" cy="24" r="12" fill="#ff0000"/>
+  <text x="72" y="29" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">!</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="256" cy="256" r="256" fill="#2563eb"/>
+
+  <!-- Train Symbol -->
+  <rect x="180" y="160" width="152" height="180" rx="12" fill="#ffffff"/>
+  <rect x="196" y="176" width="56" height="56" rx="8" fill="#2563eb"/>
+  <rect x="260" y="176" width="56" height="56" rx="8" fill="#2563eb"/>
+
+  <!-- Windows -->
+  <rect x="204" y="184" width="40" height="40" rx="4" fill="#60a5fa"/>
+  <rect x="268" y="184" width="40" height="40" rx="4" fill="#60a5fa"/>
+
+  <!-- Train Base -->
+  <rect x="180" y="280" width="152" height="40" rx="8" fill="#1e40af"/>
+
+  <!-- Wheels -->
+  <circle cx="212" cy="310" r="16" fill="#1f2937"/>
+  <circle cx="212" cy="310" r="8" fill="#6b7280"/>
+  <circle cx="256" cy="310" r="16" fill="#1f2937"/>
+  <circle cx="256" cy="310" r="8" fill="#6b7280"/>
+  <circle cx="300" cy="310" r="16" fill="#1f2937"/>
+  <circle cx="300" cy="310" r="8" fill="#6b7280"/>
+
+  <!-- Railroad Crossing Lines -->
+  <line x1="120" y1="360" x2="392" y2="360" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
+  <line x1="140" y1="380" x2="372" y2="380" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Warning Symbol -->
+  <circle cx="432" cy="128" r="64" fill="#ef4444"/>
+  <text x="432" y="148" font-family="Arial, sans-serif" font-size="56" font-weight="bold" fill="#ffffff" text-anchor="middle">!</text>
+</svg>
