@@ -201,17 +201,29 @@ SENDGRID_API_KEY=xxx
 
 ## 📱 Deployment
 
-### Backend
+### Web Dashboard → Vercel (Recommended) 🚀
+
+**Quick Deploy:**
+1. Push to GitHub
+2. Import to [Vercel](https://vercel.com)
+3. Set environment variables
+4. Deploy! ✨
+
+**Detailed Guide:** See [docs/VERCEL_DEPLOYMENT.md](docs/VERCEL_DEPLOYMENT.md)
+
+**One-Click Deploy:**
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/umtkyck/XingAEye&project-name=xingaeye&repository-name=XingAEye&root-directory=web)
+
+### Backend → AWS
 - Deploy on AWS Lambda + API Gateway or ECS
 - Auto-scaling configuration included
+- See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)
 
-### Web Dashboard
-- Deploy to Vercel with one-click deployment
-- Automatic HTTPS and CDN
-
-### Mobile App
+### Mobile App → App Stores
 - iOS: Deploy via App Store Connect
 - Android: Deploy via Google Play Console
+- Built with Expo/EAS
 
 ## 🛡️ Security
 
