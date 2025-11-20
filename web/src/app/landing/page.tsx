@@ -2,6 +2,7 @@
 
 import { Suspense, useEffect, useRef } from 'react'
 import { Canvas } from '@react-three/fiber'
+import { Navigation } from '@/components/landing/Navigation'
 import { Hero } from '@/components/landing/Hero'
 import { Features } from '@/components/landing/Features'
 import { Technology } from '@/components/landing/Technology'
@@ -67,6 +68,9 @@ export default function LandingPage() {
           backgroundRepeat: 'repeat',
         }}
       />
+
+      {/* Navigation */}
+      <Navigation />
 
       {/* Content */}
       <div className="relative z-20">

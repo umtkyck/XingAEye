@@ -1,65 +1,21 @@
 'use client'
 
-import { useState } from 'react'
-import { MapView } from '@/components/MapView'
-import { StatsOverview } from '@/components/StatsOverview'
-import { AlertList } from '@/components/AlertList'
-import { Header } from '@/components/Header'
-import { Sidebar } from '@/components/Sidebar'
+import { useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 
-export default function Dashboard() {
-  const [selectedCrossing, setSelectedCrossing] = useState<string | null>(null)
-  const [sidebarOpen, setSidebarOpen] = useState(true)
+export default function Home() {
+  const router = useRouter()
+
+  useEffect(() => {
+    // Redirect to landing page
+    router.push('/landing')
+  }, [router])
 
   return (
-    <div className="flex h-screen bg-background">
-      {/* Sidebar */}
-      <Sidebar isOpen={sidebarOpen} onToggle={() => setSidebarOpen(!sidebarOpen)} />
-
-      {/* Main Content */}
-      <div className="flex-1 flex flex-col overflow-hidden">
-        {/* Header */}
-        <Header />
-
-        {/* Dashboard Content */}
-        <main className="flex-1 overflow-hidden">
-          <div className="h-full p-6 space-y-6 overflow-y-auto">
-            {/* Stats Overview */}
-            <StatsOverview />
-
-            {/* Map and Alerts */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-              {/* Map View */}
-              <div className="lg:col-span-2">
-                <div className="bg-card rounded-lg border shadow-sm overflow-hidden h-[600px]">
-                  <div className="p-4 border-b">
-                    <h2 className="text-lg font-semibold">Railroad Crossings Map</h2>
-                    <p className="text-sm text-muted-foreground">
-                      Real-time monitoring of all crossing locations
-                    </p>
-                  </div>
-                  <MapView
-                    onCrossingSelect={setSelectedCrossing}
-                    selectedCrossing={selectedCrossing}
-                  />
-                </div>
-              </div>
-
-              {/* Active Alerts */}
-              <div className="lg:col-span-1">
-                <div className="bg-card rounded-lg border shadow-sm h-[600px] flex flex-col">
-                  <div className="p-4 border-b">
-                    <h2 className="text-lg font-semibold">Active Alerts</h2>
-                    <p className="text-sm text-muted-foreground">
-                      Recent alerts requiring attention
-                    </p>
-                  </div>
-                  <AlertList crossingId={selectedCrossing} />
-                </div>
-              </div>
-            </div>
-          </div>
-        </main>
+    <div className="min-h-screen bg-[#0a0a0f] flex items-center justify-center">
+      <div className="text-center">
+        <div className="w-16 h-16 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mx-auto mb-4" />
+        <p className="text-white/60">Loading XingAEye...</p>
       </div>
     </div>
   )
