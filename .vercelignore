@@ -1,0 +1,42 @@
+# Dependencies
+node_modules
+*/node_modules
+
+# Build outputs (except web)
+backend/dist
+mobile/.expo
+
+# Environment files
+.env
+.env.local
+.env*.local
+*.env
+
+# Logs
+*.log
+logs
+
+# IDE
+.vscode
+.idea
+
+# OS
+.DS_Store
+
+# Testing
+coverage
+
+# Misc
+.cache
+.parcel-cache
+
+# Ignore everything except web directory
+backend/
+mobile/
+aws/
+docs/
+
+# But keep important files
+!package.json
+!vercel.json
+!README.md
