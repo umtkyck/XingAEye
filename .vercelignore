@@ -5,10 +5,10 @@ aws
 docs
 shared
 
-# Root level files to ignore
-package.json
-package-lock.json
-.gitignore
+# Root level files to ignore (use / prefix to match only root)
+/package.json
+/package-lock.json
+/.gitignore
 
 # Keep these
 !vercel.json
