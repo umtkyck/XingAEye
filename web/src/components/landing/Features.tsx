@@ -5,7 +5,10 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { Eye, Zap, Shield, Brain, Video, Bell } from 'lucide-react'
 
-gsap.register(ScrollTrigger)
+// Register ScrollTrigger plugin
+if (typeof window !== 'undefined') {
+  gsap.registerPlugin(ScrollTrigger)
+}
 
 const features = [
   {
