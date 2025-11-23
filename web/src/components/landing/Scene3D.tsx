@@ -164,6 +164,8 @@ export function Scene3D() {
         <ChromaticAberration
           blendFunction={BlendFunction.NORMAL}
           offset={new THREE.Vector2(0.001, 0.001)}
+          radialModulation={false}
+          modulationOffset={0}
         />
         <Noise opacity={0.08} />
       </EffectComposer>
