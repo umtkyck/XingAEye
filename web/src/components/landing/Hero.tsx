@@ -7,7 +7,7 @@ import { ArrowRight, Play, Shield } from 'lucide-react'
 export function Hero() {
   const heroRef = useRef<HTMLDivElement>(null)
   const titleRef = useRef<HTMLHeadingElement>(null)
-  const subtitleRef = useRef<HTMLParagasraphElement>(null)
+  const subtitleRef = useRef<HTMLParagraphElement>(null)
   const ctaRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
